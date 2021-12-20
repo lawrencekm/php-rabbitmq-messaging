@@ -40,13 +40,13 @@ $callback = function ($msg) {
           //  echo "Error: " . $sql . "<br>" . $conn->error;
         }
     }
-    /
+    /*
     $sql = array(); 
 foreach( $data as $row ) {
     $sql[] = '("'.mysql_real_escape_string($row['text']).'", '.$row['category_id'].')';
 }
 mysql_query('INSERT INTO table (text, category) VALUES '.implode(',', $sql));
-
+*/
 
     echo ('completed db save in:' . (string)(microtime(true) - $time_start). "\n");
     $time_start = microtime(true);
